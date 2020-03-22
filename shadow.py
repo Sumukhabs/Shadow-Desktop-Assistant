@@ -57,8 +57,8 @@ def sendMail(mailId,message):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('sumukhabs31@gmail.com', 'Gotohell7@')
-    server.sendmail('sumukhabs31@gmail.com',mailId , message)
+    server.login('Yourmailid', 'e-mail password')
+    server.sendmail('youremailid',mailId , message)
     server.close()
 
 def givenews():
@@ -111,7 +111,7 @@ if __name__ == "__main__":
             webbrowser.open("stackoverflow.com")
 
         elif 'play music' in query or 'play songs' in query:
-            music_dir='C:\\Users\\Sumukha\\Music'
+            music_dir='path for the songs' #you must provide the correct path
             sno=len(music_dir)
             rint=randrange(0,sno-1)
             songs=os.listdir(music_dir)
@@ -121,8 +121,8 @@ if __name__ == "__main__":
             time= datetime.datetime.now().strftime("%H:%M:%S")
             speech(f" Sir the time is {time}")
 
-        elif 'open atom editor' in query:
-           atomPath='C:\\Users\\Sumukha\\AppData\\Local\\atom\\atom.exe'
+        elif 'open code editor' in query:
+           atomPath='path for the code editor' #please specify the correct target or path in the properties
            os.startfile(atomPath)
 
         elif 'send email' in query:
