@@ -10,7 +10,7 @@ import random
 from random import randrange
 
 
-maildict={"antony":"sumukhabs5@gmail.com"}
+maildict={"antony":"antonys_mail_id"} #Sending mail Id To whom you want to send a mail 
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
