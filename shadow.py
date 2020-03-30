@@ -4,7 +4,7 @@ import datetime
 import wikipedia
 import webbrowser
 import os
-os.add_dll_directory(r'C:\\Program Files\\VideoLAN\\VLC')
+os.add_dll_directory(r'C:\\Program Files\\VideoLAN\\VLC') //my dir where VLC is installed
 import smtplib
 import requests
 import random
@@ -25,11 +25,11 @@ voices = engine.getProperty('voices')
 #print(voices[4].id)
 engine.setProperty('voice', voices[4].id)  #  voice id  (assigning a voice)
 
-maildict={"antony":"sumukhabs5@gmail.com"}
-username = 'sumukhabs31@gmail.com'
-password='gotohell77@'
+maildict={"sumukha":"sumukhabs5@gmail.com"}
+username = 'mail adresss'
+password='password'
 imapurl="imap.gmail.com"
-attachment_dir="C:\\Users\\Sumukha\\Documents\\Emails"
+attachment_dir="C:\\Users\\Sumukha\\Documents\\Emails" //my dir choose yours
 
 
 #def getbody(msg):
@@ -197,7 +197,7 @@ if __name__ == "__main__":
             webbrowser.open("stackoverflow.com")
 
         elif 'play music' in query or 'play songs' in query:
-            music_dir='C:\\Users\\Sumukha\\Music'
+            music_dir='C:\\Users\\Sumukha\\Music' //my dir where songs are stored.,choose yours
             sno=len(music_dir)
             rint=randrange(0,sno-1)
             songs=os.listdir(music_dir)
@@ -240,7 +240,7 @@ if __name__ == "__main__":
 
        
         elif 'gmail' in query or 'mail' in query:
-            webbrowser.open("https://mail.google.com/mail/u/2/#inbox")
+            webbrowser.open(" ") //specifi your mails http adress ot URL
             readmail()
 
         elif 'youtube' in query:
